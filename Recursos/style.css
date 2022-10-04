@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat+Alternates:ital,wght@1.900 & display=swap');
+@import url('https://fonts.googleapis.com/css2? família= Montserrat:wght@300 & display=swap');
+
+:root {
+    --cor1: #f77823;
+    --cor2: #f9913b;
+    --cor3: #fbaa54;
+    --cor4: #fdc26c;
+    --cor5: #ffdb84;
+    --cor6: #f2ac1e;
+    --cor7: #FFFACD;
+
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --fonte-destaque: 'Montserrat Alternates', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box, content-box;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+body{
+    background-image: url(Imagens/fundo.jpeg);
+}
+
+h1, h2, h3 {
+    font-family: var(--fonte-destaque);
+    color: black;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p, li, u{
+    font-size: 15px;
+    line-height: 22px;
+    font-family: var(--fonte-padrao);
+    color: black;
+}
+
+a{
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    word-spacing: 20px;
+    padding-bottom: 10px;
+    line-height: 30px;
+    height: 210px;
+    color: white;
+    background-image: url(Imagens/quincasborba-logo.png);
+}
+
+header>div>a:hover {
+    border-top: 2px solid var(--cor1);
+    border-bottom: 2px solid var(--cor1);
+    color: var(--cor1);
+}
+
+.livro>.informações>.capa>img {
+    width: 200px;
+    height: 200px;
+    margin-left: 400px;
+}
+
+.livro>.informações>.dados {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.livro>.principal {
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+    text-align: justify;
+    background-color: var(--cor7);
+    border-left: 5px solid var(--cor6);
+    border-right: 5px solid var(--cor6);
+}
+
+.livro>.principal>.footer1{
+    background-color: var(--cor6);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.livro>.principal>.footer2{
+    background-color: var(--cor6);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.livro>.principal>h1 {
+    padding: 30px 20px 20px 20px ;
+    margin: 20px;
+}
+
+.livro>.principal>p {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.livro>.principal>.coluna{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    size: 16px;
+    margin: 20px;
+}
+
+.livro>.principal>.coluna>.parte1{
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 50%;
+}
+
+.livro>.principal>.coluna>.parte2{
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 50%;
+}
+
+.livro>.autor {
+    border-radius: 20px;
+    margin: 50px;
+    align-items: center;
+    text-align: justify;
+    background-color: var(--cor7);
+    border-left: 5px solid var(--cor6);
+    border-right: 5px solid var(--cor6);
+}
+
+.livro>.autor>.footer1{
+    background-color: var(--cor6);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.livro>.autor>.footer2{
+    background-color: var(--cor6);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.livro>.autor>h1 {
+    padding: 30px 20px 20px 20px ;
+    margin: 20px;
+}
+
+.livro>.autor>p {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.livro>.autor>.coluna{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    size: 16px;
+    margin: 20px;
+}
+
+.livro>.autor>.coluna>.parte1{
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 50%;
+}
+
+.livro>.autor>.coluna>.parte2{
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+    width: 50%;
+}
+
+.livro>.autor>img{
+    padding: 0px 20px 20px 20px;
+    margin-left: 400px;
+    text-align: center;
+    width: 40%;
+}
+
+.livro>.caracteristicas{
+    background-color: var(--cor4);
+    padding: 40px;
+    padding-left: 70px;
+    margin: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.livro>.caracteristicas>.capa>img{
+    width: 250px;
+    height: 300px;
+}
+
+.livro>.caracteristicas>.dados{
+    padding-top: 30px;
+}
+
+.livro>.caracteristicas>.carac{
+    padding-top: 60px;
+}
+
+.livro>.caracteristicas>.carac>ul{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.professor>.tudo>.professores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    text-align: justify;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.professor>.tudo{
+    background-color: var(--cor6);
+    border-radius: 20px;
+    margin: 50px;
+}
+
+.professor>.tudo>.professores>.sandra{
+    width: 700px;
+    margin: 20px;
+    background-color: var(--cor5);
+}
+
+.professor>.tudo>.professores>div>div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.professor>.tudo>.professores>.liberato{
+    width: 700px;
+    margin: 20px;
+    background-color: var(--cor5);
+}
+
+.professor>.tudo>.professores>div>div>h2{
+    padding-top: 35px;
+    margin-left: 20px;
+}
+
+.professor>.tudo>h1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.professor>.tudo>.professores>div>div>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0px 20px 20px 10px;
+}
+
+.professor>.tudo>.professores>div{
+    border-radius: 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.alunas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    text-align: justify;
+}
+
+.alunas>div{
+    background-color: var(--cor6);
+    padding: 40px;
+    margin: 50px;
+    border-radius: 20px;
+    width: 450px;
+}
+
+.alunas>div>img {
+    display: flex;
+    border-radius: 100%;
+    height: 150px;
+    width: 120px;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.utfpr>.utf>.colunas>.parte1>img{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.utfpr>.utf{
+    display: flex;
+    background-color: var(--cor4);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.utfpr>.utf>.colunas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: justify;
+}
+
+.utfpr>.utf>.colunas>.parte1{
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    text-align: justify; 
+}
+.utfpr>.utf>.colunas>.parte2{
+    flex-direction: column;
+    padding: 50px 20px 0px 20px;
+    text-align: justify; 
+}
+.utfpr>.utf>.parte3{
+    display: flex;
+    text-align: justify;
+    margin: 5px;
+}
+
+.utfpr>.curso{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor4);
+    margin: 50px;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    padding: 40px 20px 20px 20px;
+
+}
+
+.utfpr>.curso>p{
+    text-align: justify;
+    padding: 20px;
+}
+
+.utfpr>.curso>div{
+    margin-top: 50px;
+}
+
+.livro>.up{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.livro>.up>a>img{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%; 
+}
+
+footer{
+    background-color: var(--cor6);
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+}

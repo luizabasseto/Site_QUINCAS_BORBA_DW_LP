@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="Recursos/style_media_query.css">
+    <link rel="shortcut icon" href="Recursos/Imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="apresentacao">
+            <a href="index.html"><strong>Apresentação</strong></a>
+            <a href="index.html#utfpr"><strong>Curso</strong></a>
+            <a href="media_query.html"><strong>Media Query</strong></a>
+        </div>
+
+        <div class="menupersonagens">
+            <a href="personagem1.html"><strong>Quincas Borba</strong></a>
+            <a href="personagem2.html"><strong>Rubião</strong></a>
+            <a href="personagem3.html"><strong>Sofia</strong></a>
+        </div>
+    </header>
+
+    <div class="media-query">
+        <footer class="footer1">&nbsp;</footer>
+        <h1>Media Query</h1>
+        <li><strong>O que são medias queries?</strong></li>
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma media query consiste em um tipo de mídia e pelo menos uma expressão
+            que usa características de mídia como largura, altura e cor para limitar o escopo de uma folha de estilo. As
+            consultas de mídia adicionadas no CSS3 adaptam a renderização do conteúdo a uma variedade de dispositivos
+            sem alterar o conteúdo em si.</p>
+
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uma consulta de mídia consiste em um tipo de mídia e pode conter uma ou
+            mais expressões de acordo com a especificação CSS3, expressa em termos de características da mídia, que
+            determinam verdadeiro ou falso. O resultado da consulta será verdadeiro se o tipo de mídia especificado na
+            consulta de mídia corresponder ao tipo de documento exibido no dispositivo e todas as expressões na consulta
+            de mídia forem verdadeiras. Quando a consulta de mídia for verdadeira, a camada de estilo ou as regras de
+            estilo correspondentes serão aplicadas, seguindo o padrão de regras em cascata. Camadas de estilo com
+            consultas de mídia vinculadas a tags &lt;link&gt; serão baixadas mesmo se a consulta de mídia retornar
+            falsa. A menos que você use os operadores not ou only, o media type é opcional e o tipo all será implícito.
+        </p>
+
+        <div class="tudo">
+            <div class="codigos">
+                <div class="codigo1">
+                    <code>
+                            &lt;!-- CSS media query em um elemento de link --&gt;<br/>
+                            &lt;link rel="stylesheet" media="(max-width: 800px)" href="example.css"/&gt;
+                    </code>
+                </div>
+
+                <div class="codigo2">
+                    <code>
+                            &lt;!-- CSS media query dentro de um stylesheet --&gt;<br/>
+                            @media (max-width: 600px){<br/>
+                                &nbsp;&nbsp;.facet_sidebar{<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: none;<br/>
+                                    &nbsp;&nbsp;}<br/>
+                            }
+                    </code>
+                </div>
+            </div>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AltqAPZzAqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <footer class="footer2">&nbsp;</footer>
+    </div>
+
+    <footer>
+        Site criado por Beatriz Caroline Moggio, Julia Istchuk de Oliveira e Luiza Batista Basseto, ambas alunas do
+        Curso Técnico Integrado em Informática da UTFPR-CM.
+    </footer>
+</body>
+
+</html>
